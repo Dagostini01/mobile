@@ -1,0 +1,15 @@
+import { View, Text } from "react-native";
+import { Step } from "../step";
+import { IconMapPin, IconQrcode, IconTicket } from "@tabler/icons-react-native"
+import {s} from "./styles"
+
+export function Steps() {
+    return (
+        <View style={s.container}>
+            <Text style={s.title}>Veja como functiona:</Text>
+            <Step icon={IconMapPin} title="Encontre estabelecimentos" description="Veja locais perto de você que são parceiros Nearby" />
+            <Step icon={IconQrcode} title="Ative o cupom com QR Code" description="Escaneie o código no estabelecimento para usar o benefício"/>
+            <Step icon={IconTicket} title="Garante vantagens perto de você" description="Ative cupons onde estiver, em diferentes tipos de estabelecimento"/>
+        </View>
+    )
+}

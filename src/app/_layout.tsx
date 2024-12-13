@@ -1,5 +1,5 @@
 import { Stack } from "expo-router"
-import { colors } from "@/src/styles/theme"
+import { colors } from "@/styles/theme"
 import {
     useFonts,
     Rubik_600SemiBold,
